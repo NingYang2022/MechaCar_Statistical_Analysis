@@ -1,0 +1,53 @@
+# Deliverable 1
+
+# Use the library() function to load the dplyr package.
+library(dplyr)
+
+# Import and read in the MechaCar_mpg.csv file as a dataframe
+mechacar_mpg_table <- read.csv('MechaCar_mpg.csv',check.names = F,stringsAsFactors = F)
+head(mechacar_mpg_table)
+
+# Perform linear regression using the lm() function, pass in all six variables (i.e., columns), and add the dataframe
+lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data= mechacar_mpg_table)
+
+# Using the summary() function, determine the p-value and the r-squared value for the linear regression model.
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data= mechacar_mpg_table))
+
+# Deliverable 2
+
+# Import and read in the Suspension_Coil.csv file as a table.
+susp_coil_table <- read.csv('Suspension_Coil.csv',check.names = F,stringsAsFactors = F)
+
+# Creates a total_summary dataframe using the summarize() function 
+# to get the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
+total_summary <- susp_coil_table %>% summarize(Mean_Total =mean(PSI), Median_Total=median(PSI), Var_Total=var(PSI), SD_Total=sd(PSI))
+
+# Creates a lot_summary dataframe using the group_by() and the summarize() functions 
+# to group each manufacturing lot by the mean, median, variance, 
+# and standard deviation of the suspension coil’s PSI column.
+lot_summary <- susp_coil_table  %>% group_by(Manufacturing_Lot) %>% summarize(Mean_by_Lot=mean(PSI),Median_by_Lot=median(PSI),Var_by_Lot=var(PSI),SD_by_Lot=sd(PSI))
+
+
+# Deliverable 3
+
+# write an RScript using the t.test() function to determine 
+# if the PSI across all manufacturing lots is statistically different 
+# from the population mean of 1,500 pounds per square inch.
+t.test(susp_coil_table$PSI, mu = 1500)
+
+
+# write three more RScripts using the t.test() function and 
+# its subset() argument to determine if the PSI for each 
+# manufacturing lot is statistically different from the 
+# population mean of 1,500 pounds per square inch.
+
+#produce tables for lot1,lot2 and lot3 using subset()function
+manufacturing_lot1_table <- subset(susp_coil_table, Manufacturing_Lot == "Lot1")
+manufacturing_lot2_table <- subset(susp_coil_table, Manufacturing_Lot == "Lot2")
+manufacturing_lot3_table <- subset(susp_coil_table, Manufacturing_Lot == "Lot3")
+
+# run three t-tests that compare each manufacturing lot 
+# against mean PSI of the population
+t.test(manufacturing_lot1_table$PSI, mu = 1500)
+t.test(manufacturing_lot2_table$PSI, mu = 1500)
+t.test(manufacturing_lot3_table$PSI, mu = 1500)
