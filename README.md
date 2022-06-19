@@ -1,6 +1,22 @@
 
 # MechaCar Statistical Analysis
 
+## <font color=#6495ED>Background:</font>
+AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on us to review the production data for insights that may help the manufacturing team.
+
+In this challenge, we will do the following:
+* Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
+* Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
+* Run t-tests to determine if the manufacturing lots are statistically different from the mean population
+* Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For each statistical analysis, you’ll write a summary interpretation of the findings.
+
+## <font color=#6495ED>Data Resource:</font>
+*  MechaCar MPG dataset
+*  Suspension Coil dataset
+
+## <font color=#6495ED>Software:</font>
+R-Base 3.6.3, RStudio 1.3.1
+
 ## <font color=#6495ED>Linear Regression to Predict MPG</font>
 !["Deliverable_1_lm"](https://github.com/NingYang2022/MechaCar_Statistical_Analysis/blob/main/images/Deliverable_1_lm.png?raw=true)
 
