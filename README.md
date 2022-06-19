@@ -36,4 +36,6 @@ Lot summary dataframe:
 
 ### <font color=#6495D>The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?</font>
 
+* The **total** summary result shows ```Var_Total: 62.29356``` meets the variance of the suspension coils must not exceed 100 PSI.
 
+* **Lot 1**(```Var_by_lot: 0.9795918```) and **Lot 2**(```Var_by_lot: 7.4693878```) are well within the 100 PSI variance requirement. However, **Lot 3**(```Var_by_lot: 170.2861224```) does not predict to design specifications because variance is greater than 100 PSI.
