@@ -39,3 +39,33 @@ Lot summary dataframe:
 * The **total** summary result shows ```Var_Total: 62.29356``` meets the variance of the suspension coils must not exceed 100 PSI.
 
 * **Lot 1**(```Var_by_lot: 0.9795918```) and **Lot 2**(```Var_by_lot: 7.4693878```) are well within the 100 PSI variance requirement. However, **Lot 3**(```Var_by_lot: 170.2861224```) does not predict to design specifications because variance is greater than 100 PSI.
+
+## <font color=#6495D> T-Tests on Suspension Coils</font>
+
+Suspension Table T-Test:
+
+!["Deliverable_3_01"](https://github.com/NingYang2022/MechaCar_Statistical_Analysis/blob/main/images/Deliverable_3_01.png?raw=true)
+
+The **true mean of the sample is 1498.78**.  the **p-Value is 0.06**, which is greater than the  significance level of 0.05, there is **NOT enough evidence to reject the null hypothesis**. That indicates the mean of all  manufacturing lots is **not** statistically **different** from the presumed population mean of 1500.
+
+
+Lot 1 T-Test:
+
+!["Deliverable_3_lot1.png"](https://github.com/NingYang2022/MechaCar_Statistical_Analysis/blob/main/images/Deliverable_3_lot1.png?raw=true)
+
+The **true mean of the sample is 1500**.  the **p-Value is 1**, which is greater than the  significance level of 0.05, there is **NOT enough evidence to reject the null hypothesis**. That indicates the mean of   manufacturing lot1 is statistically **similar** to the presumed population mean of 1500.
+
+
+Lot 2 T-Test:
+
+!["Deliverable_3_lot2.png"](https://github.com/NingYang2022/MechaCar_Statistical_Analysis/blob/main/images/Deliverable_3_lot2.png?raw=true)
+
+The **true mean of the sample is 1500.02**.  the **p-Value is 0.61**, which is greater than the  significance level of 0.05, there is **NOT enough evidence to reject the null hypothesis**. That indicates the mean of  manufacturing lot2 is statistically **similar** to the presumed population mean of 1500.
+
+
+Lot 3 T-Test:
+
+!["Deliverable_3_lot3.png"](https://github.com/NingYang2022/MechaCar_Statistical_Analysis/blob/main/images/Deliverable_3_lot3.png?raw=true)
+
+The **true mean of the sample is 1496.14**.  the **p-Value is 0.04**, which is smaller than the  significance level of 0.05, there is **enough evidence to reject the null hypothesis**. That indicates the mean of  manufacturing lot3 is statistically **different** from the presumed population mean of 1500.
+
