@@ -14,8 +14,12 @@ In the summary output, each Pr(>|t|) value represents the probability that each 
 
 ### <font color=#6495D>Is the slope of the linear model considered to be zero? Why or why not?</font>
 
+The slope of the linear model is **not** considered to be zero because the p-value is less than 0.05.
 
+```p-Value: 5.35e-11```, is much smaller than significance level of 0.05 which indicates there is sufficient evidence to **reject our null hypothesis**, which means the slope of this linear model is **not zero**.
 
 
 ### <font color=#6495D>Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?</font>
+This linear model predict mpg of MechaCar prototypes **effectively**.
 
+```Multiple R-squared: 0.7149```means that 71.49% of mpg predictions will be determined by the model. In addition, ```p-Value: 5.35e-11``` is smaller than the desired significance level of 0.05. These indicate this multiple regression model predict mpg **effectively**.
