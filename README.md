@@ -10,7 +10,7 @@
 
 The **Vehicle Length** and **Ground Clearence** had a non-random amount of variance to the mpg values.
 
-In the summary output, each Pr(>|t|) value represents the probability that each coefficient contributes a random amount of variance to the linear model. According to our results, ```Vehicle Length: 5.08e-08``` and ```Ground Clearence: 5.21e-08``` (as well as intercept) are statistically unlikely to provide random amounts of variance to the linear model. In other words the **Vehicle Length** and **Ground Clearence** have a significant impact on mpg values.
+In the summary output, each Pr(>|t|) value represents the probability that each coefficient contributes a random amount of variance to the linear model. According to our results, ```Vehicle Length: 5.08e-08``` and ```Ground Clearence: 5.21e-08``` (as well as ```intercept: 5.08e-08```) are statistically unlikely to provide random amounts of variance to the linear model. In other words the **Vehicle Length** and **Ground Clearence** have a significant impact on mpg values.
 
 ### <font color=#6495D>Is the slope of the linear model considered to be zero? Why or why not?</font>
 
