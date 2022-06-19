@@ -79,7 +79,7 @@ There are many factors that would have impact on the sales. The statistical stud
 * **Cost** (Independent)
 * **Maintenance cost** (Independent)
 * **Highway fuel efficiency** (Independent)
-* **safety rating** (Independent)
+* **Safety rating** (Independent)
 
 
 ### <font color=#6495D> Null and Alternate Hypothesis:</font>
