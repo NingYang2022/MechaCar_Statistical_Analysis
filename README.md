@@ -40,7 +40,7 @@ Lot summary dataframe:
 
 * **Lot 1**(```Var_by_lot: 0.9795918```) and **Lot 2**(```Var_by_lot: 7.4693878```) are well within the 100 PSI variance requirement. However, **Lot 3**(```Var_by_lot: 170.2861224```) does not predict to design specifications because variance is greater than 100 PSI.
 
-## <font color=#6495D> T-Tests on Suspension Coils</font>
+## <font color=#6495ED> T-Tests on Suspension Coils</font>
 
 Suspension Table T-Test:
 
@@ -69,3 +69,27 @@ Lot 3 T-Test:
 
 The **true mean of the sample is 1496.14**.  the **p-Value is 0.04**, which is smaller than the  significance level of 0.05, there is **enough evidence to reject the null hypothesis**. That indicates the mean of  manufacturing lot3 is statistically **different** from the presumed population mean of 1500.
 
+
+## <font color=#6495ED> Study Design: MechaCar vs Competition:</font>
+
+There are many factors that would have impact on the sales. The statistical study would compare some metrics of MechaCar against competitors to determine if there is a correlation to higher sales then others.
+### <font color=#6495D> Metrics to test</font>
+* **Sales** (Dependent)
+* **Brand popularity** (Independent)
+* **Cost** (Independent)
+* **Maintenance cost** (Independent)
+* **Highway fuel efficiency** (Independent)
+* **safety rating** (Independent)
+
+
+### <font color=#6495D> Null and Alternate Hypothesis:</font>
+
+**Null Hypothesis(H<sub>0</sub>)**: MechaCar would have higher sales based on its performance of key metrics against competitors.
+
+**Alternative Hypothesis(H<sub>a</sub>)**:MechaCar would not have higher sales based on its performance of key metrics against competitors.
+### <font color=#6495D> Statistical Test</font>
+
+A **multiple linear regression** would be used to determine the factors that have the highest correlation with sales; what factor or combination of factors has the greatest impact on the sales.
+
+### <font color=#6495D> Data needed</font>
+We would need to collect the metric data for comparable models of MechaCar and main competitors for the past 5 years.
